@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet"> 
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/styles.css">
+
+        <title>Registrar productos</title>
+    </head>
+    <body>
+
+        <header class="site-header">
+            <div class="contenedor contenido-header">
+                <div class="barra">
+                    <div class="logo">
+                        <a href="index.html"><h1>Tienda virtual de prueba</h1>  </a>
+                    </div>
+    
+                    <nav class="navegacion">
+                        <a href="index.html">Inicio</a>
+                        <a href="catalogo.html">catálogo</a>
+                        <a href="registroProductos.html">Registro de productos</a>
+                        <a href="carrito.html">Carrito</a>
+    
+                    </nav>
+                </div>
+                
+            </div>
+        </header>
+
+        <div class="contenedor">
+
+            <h1 class="t-center">Registro de productos</h1>
+            <div class="contenido-formulario">
+                <form id="formulario">
+                    <div class="entradas">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre">
+
+                        <label for="precio">Precio:</label>
+                        <input type="text" id="precio" name="precio">
+
+                        <label for="dept">Departamento:</label>
+                        <select name="dept" id="dept">
+                            <option value="overEar">Audífonos over-ear</option>
+                            <option value="onEar">Audífonos on-ear</option>
+                            <option value="inEar">Audífonos in-ear</option>
+                        </select>
+
+                        <label for="descripcion">Descripción del producto:</label>
+                        <textarea name="descripcion" id="descripcion" ></textarea>
+                        
+                        <label for="urlImagen">Ingrese URL de la imagen del producto:</label>
+                        <input type="text" id="urlImagen" name="urlImagen">
+
+                        <label for="inventario">Cantidad de piezas:</label>
+                        <input type="text" id="inventario" name="inventario">
+                        
+                    </div>
+                 
+                    <div class="botones">
+
+                        <button type="submit" id="btnRegistrarFinal">Insertar producto</button>
+                        <button type="submit" id="btnBorrarUltimo">Borrar ultimo producto</button>
+                        <button type="submit" id="btnBorrarRegistros">Borrar toda la información</button>
+                        <button type="submit" id="btnOrdenarA">Ordenar productos</button>
+
+                        <!-- <button type="submit" id="btnMostrar">Mostrar los productos</button>                       
+                        <button type="submit" id="btnBorrarPrimero">Borrar primer elemento</button>
+                        <button type="submit" id="btnRegistrarInicio">Registrar producto</button>
+                        <button type="submit" id="btnOrdenarD">Ordenar descendente</button> -->
+                    </div>
+                    
+                </form>
+            </div>
+
+            <div class="contenido-resultados">
+                <div id="resultados">
+                
+                </div>
+            </div>
+
+            
+        </div>
+
+        <footer class="site-footer">
+            <p>Derechos reservados</p>
+        </footer>
+        
+       
+        <script src="js/registroProductos.js"></script>
+    </body>
+</html>

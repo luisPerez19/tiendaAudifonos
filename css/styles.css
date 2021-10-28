@@ -1,0 +1,219 @@
+/* Estilos CSS */
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 1.6rem; /*NOTA: 1rem=10px, 1.6rem=16px, trata de usar rem en lugar de pixeles*/ 
+    font-family: 'Roboto', sans-serif;
+}
+  
+/* Selectores Globales */
+
+img {
+    max-width: 100%;
+}
+
+/* Utilidades */
+
+.contenedor {
+    width: 90%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.t-center{
+    text-align: center;
+}
+
+
+/* Inicio de la página */
+
+
+.site-header {
+    background-color: rgb(56, 56, 56);
+}
+
+.site-header h1 {
+    margin: 0;
+    color: white;
+}
+
+.site-header a {
+    text-decoration: none;
+}
+
+
+.barra {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.navegacion a {
+    margin-left: 15px;
+    color: white;
+}
+
+
+
+
+
+/* Footer */
+
+.site-footer {
+    background-color: rgb(56, 56, 56);
+    text-align: center;
+    color: white;
+    padding: 10px 0;
+    margin-top: 25px;
+}
+
+
+/* Carrito de compras */
+
+.contenedor-articulos {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.articulo {
+    display: flex;
+    align-items: center;
+    border: 1px solid gray;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.articulo .imagen {
+    flex-basis: calc(25%);
+}
+
+.articulo .descripcion {
+    flex-basis: calc(75% - 15px);
+}
+
+/* Contenedor de cartas */
+
+
+.contenedor-cartas {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.carta {
+    flex-basis: calc(33.3% - 15px);
+    border: 1px solid rgb(218, 218, 218);
+}
+
+.carta .imagen {
+    text-align: center;
+}
+
+.carta .descripcion {
+    padding: 10px;
+}
+
+.agregar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.agregar button {
+    padding: 0 20px;
+    background-color: rgb(35, 35, 245);
+    border: 1px solid rgb(0, 0, 0);
+    height: 30px;
+}
+
+.agregar button:active {
+    border: 1px solid rgb(255, 255, 255);
+  
+}
+
+/* Registro de Productos */
+
+.contenido-formulario{
+    margin: 0 auto;
+    max-width: 60rem;
+}
+
+.entradas label {
+    display: block;
+    margin: 5px 0 10px 0 ;
+}
+
+.entradas input {
+    width: 100%;
+    border: none;
+    border-radius: 5rem;
+    background-color: rgb(167, 167, 167);
+    height: 40px;
+    padding-left: 15px;
+    font-size: 16px;
+}
+
+.botones{
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 5px;
+    row-gap: 5px;
+}
+
+.botones button{
+    color: white;
+    border: none;
+    padding: 10px 20px;
+}
+
+.botones button:hover{
+    cursor: pointer;
+}
+
+.botones button:hover{
+    background-color: blueviolet!important;
+}
+
+#dept {
+    padding: 5px 0;
+    width: 100%;
+}
+
+#descripcion {
+    padding: 5px 0;
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 150px;
+    min-height: 40px;
+}
+
+#btnMostrar{
+    background-color: green;
+}
+
+#btnBorrarUltimo, #btnBorrarPrimero{
+    background-color: orange;
+}
+
+
+#btnRegistrarFinal, #btnRegistrarInicio{
+    background-color: blue;
+}
+
+#btnBorrarRegistros{
+    background-color: red;
+}
+
+#btnOrdenarA, #btnOrdenarD{
+    background-color: black;
+}
