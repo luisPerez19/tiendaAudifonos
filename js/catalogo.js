@@ -1,26 +1,11 @@
 /*Resultados*/
 let resultados = document.getElementById("resultados");
 
-let contadorProductos;
-let arregloProductos;
-
-if (localStorage.getItem("productos") != null) {
-    arregloProductos = JSON.parse(localStorage.getItem("productos"));
-} else {
-    arregloProductos = [];
-} //localstorage solo guarda cadenas
-
-if (localStorage.getItem("contadorProductos") != null) {
-    contadorProductos = JSON.parse(localStorage.getItem("contadorProductos"));
-} else {
-    contadorProductos = 0;
-}
-
-
 
 resultados.innerHTML = "";
 
 let productos;
+
 if (localStorage.getItem("productos") != null) {
     productos = JSON.parse(localStorage.getItem("productos"));
 } else {
@@ -38,7 +23,8 @@ productos.forEach(producto => {
             <p>${producto.descripcion}</p>
             <div class="agregar">
                 <p class="precio">$${producto.precio}</p>
-
+                <p>Este es el ID del producto: ${producto.id}</p>
+                <p>Este es el inventatario del producto: ${producto.inventario}</p>
                 <button id="${"boton" + producto.id}">+</button>
             </div>
             

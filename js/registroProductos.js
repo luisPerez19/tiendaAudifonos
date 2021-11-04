@@ -19,6 +19,7 @@ let btnOrdenarA = document.getElementById("btnOrdenarA");
 let contadorProductos;
 let arregloProductos;
 
+
 if (localStorage.getItem("productos") != null) {
     arregloProductos = JSON.parse(localStorage.getItem("productos"));
 } else {
@@ -68,6 +69,7 @@ btnRegistrarFinal.addEventListener("click", function(evento) {
 
     if (nombre.length > 0 && precio.length > 0 && dept.length > 0 && descripcion.length > 0 && urlImagen.length > 0 && inventario.length > 0 ) {
         let nuevoProducto = new Producto(contadorProductos, nombre, precio, dept, descripcion, urlImagen, inventario);
+
         arregloProductos.push(nuevoProducto);
         contadorProductos++;
         console.log("Producto registrado con exito!");

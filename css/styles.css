@@ -79,24 +79,44 @@ img {
 /* Carrito de compras */
 
 .contenedor-articulos {
-    max-width: 800px;
+    max-width: 700px;
     margin: 0 auto;
 }
 
 .articulo {
     display: flex;
     align-items: center;
-    border: 1px solid gray;
+    border-bottom: 1px solid gray;
     justify-content: space-between;
     margin-top: 20px;
+    align-items: center;
+
+    padding: 0 20px 20px 20px;
 }
 
 .articulo .imagen {
-    flex-basis: calc(25%);
+    flex-basis: calc(40%);
 }
 
 .articulo .descripcion {
-    flex-basis: calc(75% - 15px);
+    flex-basis: calc(60% - 15px);
+}
+
+.total {
+    text-align: right;
+    max-width: 700px;
+    margin: 50px auto;
+    font-size: 20px;
+
+    
+}
+
+.total p {
+    color: white;
+    display: inline;
+    border: 1px solid black;
+    background-color: black;
+    padding: 20px;
 }
 
 /* Contenedor de cartas */
@@ -111,6 +131,7 @@ img {
 .carta {
     flex-basis: calc(33.3% - 15px);
     border: 1px solid rgb(218, 218, 218);
+    margin-top: 15px;
 }
 
 .carta .imagen {
@@ -136,7 +157,7 @@ img {
 
 .agregar button:active {
     border: 1px solid rgb(255, 255, 255);
-  
+    color: white;
 }
 
 /* Registro de Productos */
@@ -179,7 +200,8 @@ img {
     cursor: pointer;
 }
 
-.botones button:hover{
+
+.botones button:active{
     background-color: blueviolet!important;
 }
 
